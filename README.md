@@ -3,6 +3,8 @@
 
 ## Overview
 
+Please install the GNU Arm Toolchain: `gcc-arm-none-eabi`
+
 ## Source Documentation
 
 ## MAVLink

@@ -18,4 +18,4 @@ Source: The [MAVLink Website](https://mavlink.io/en/)
 
 Using MAVLink, a set of "messages" are continuously exchanged between drone and ground control in order to control and monitor that state of the drone.
 
-Typically, MAVLink protocol is implemented inside the autopilot system - Ardupilot - which autonmously governs the direction and control of the drone.
+MAVLink protocol is to be implemented inside the autopilot system - Ardupilot - which autonmously governs the direction and control of the drone.

@@ -9,3 +9,5 @@ include_directories(${CMAKE_SOURCE_DIR}/mavlink/include)
 
 
 add_executable(DroneControl core/main.c)
+
+# use git rm -r --cached build to clean build folder

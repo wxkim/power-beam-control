@@ -4,9 +4,8 @@
             "name": "Mac",
             "includePath": [
                 "${default}",
-                //"${workspaceFolder}/libraries/**",
-                "${workspaceFolder}/libraries/**",
-                //"${workspaceFolder}/libraries/MAVLink/common/**"
+                "${workspaceFolder}/libraries/mavlink/common",
+                "${workspaceFolder}/**"
             ],
             "defines": [],
             "macFrameworkPath": [

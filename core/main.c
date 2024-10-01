@@ -42,7 +42,7 @@ void land(int fd) {
 int main() {
     int fd = open_serial_port(SERIAL_PORT);
     if (fd == -1) {
-        return EXIT_FAILURE;
+        return -1;
     }
 
     printf("Serial port opened successfully.\n");
@@ -56,5 +56,5 @@ int main() {
     land(fd);
 
 
-    return EXIT_SUCCESS;
+    return 0;
 }

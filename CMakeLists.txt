@@ -5,9 +5,11 @@ project(DroneControl LANGUAGES C CXX)
 set(CMAKE_C_STANDARD 99)
 set(CMAKE_C_STANDARD_REQUIRED True)
 
-include_directories(${CMAKE_SOURCE_DIR}/mavlink/include)
+set(MAVLINK_INC_DIR "/Users/code/drone-lab-controls/libraries/mavlink/common")
+
+include_directories(${MAVLINK_INC_DIR})
 
 
 add_executable(DroneControl core/main.c)
 
-# use git rm -r --cached build to clean build folder
+target_include_directories(DroneControl PRIVATE ${MAVLINK_INC_DIR})

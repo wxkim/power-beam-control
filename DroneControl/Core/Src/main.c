@@ -118,6 +118,7 @@ int main(void)
     HAL_Delay(1000);
     HAL_GPIO_WritePin(GPIOB, GPIO_PIN_3, GPIO_PIN_RESET);
     HAL_Delay(1000);
+    //mjbhguyftyvgh
 
     /* USER CODE BEGIN 3 */
   }

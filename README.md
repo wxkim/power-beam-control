@@ -2,6 +2,16 @@
 
 ## Overview
 
+### Development
+
+Clone with:
+
+```
+git clone --recurse-submodules https://github.com/wxkim/power-beam-control.git
+```
+
+Ensure that the MAVLink submodule is initialized correctly.
+
 ### Required Tools
 
 - STM32CubeIDE

@@ -2,6 +2,7 @@
  * Hardcoded Fly-over on MAVLINK with UART
  *
  * author: willkim  -> wkim@utdallas.edu
+ * hi
  */
 
 // #include "main.h"
@@ -89,17 +90,17 @@ void fly(void)
     // Actually fly
     setup_serial();
 
-        printf("Arming the drone...\n");
-        arm_drone();
-        HAL_Delay(2000);
+    printf("Arming the drone...\n");
+    arm_drone();
+    HAL_Delay(2000);
 
-        printf("Taking off to 1 meter...\n");
-        takeoff(1.0f);
-        HAL_Delay(5000);
+    printf("Taking off to 1 meter...\n");
+    takeoff(1.0f);
+    HAL_Delay(5000);
 
-        printf("Landing the drone...\n");
-        land_drone();
-        HAL_Delay(2000);
+    printf("Landing the drone...\n");
+    land_drone();
+    HAL_Delay(2000);
 
     while (1)
     {

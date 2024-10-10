@@ -98,6 +98,8 @@ int main(void)
 
   /* USER CODE END SysInit */
 
+
+//test test
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
   MX_ADC1_Init();

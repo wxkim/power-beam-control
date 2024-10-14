@@ -31,17 +31,17 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS, READONLY, DEBUGGING, OCTETS
  13 .debug_rnglists 00000e13  00000000  00000000  00025668  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 14 .debug_macro  00036315  00000000  00000000  0002647b  2**0
+ 14 .debug_macro  00003770  00000000  00000000  0002647b  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 15 .debug_line   000169c6  00000000  00000000  0005c790  2**0
+ 15 .debug_line   000169c8  00000000  00000000  00029beb  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 16 .debug_str    00159cd9  00000000  00000000  00073156  2**0
+ 16 .debug_str    00159cd9  00000000  00000000  000405b3  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 17 .comment      00000043  00000000  00000000  001cce2f  2**0
+ 17 .comment      00000043  00000000  00000000  0019a28c  2**0
                   CONTENTS, READONLY
- 18 .debug_frame  00004e24  00000000  00000000  001cce74  2**2
+ 18 .debug_frame  00004e24  00000000  00000000  0019a2d0  2**2
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 19 .debug_line_str 0000005b  00000000  00000000  001d1c98  2**0
+ 19 .debug_line_str 0000005b  00000000  00000000  0019f0f4  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
 
 Disassembly of section .text:
@@ -452,10 +452,10 @@ int main(void)
   /* Configure the System Power */
   SystemPower_Config();
  800060c:	f000 f886 	bl	800071c <SystemPower_Config>
-  /* USER CODE BEGIN SysInit */
-
   /* USER CODE END SysInit */
 
+
+//test test
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
  8000610:	f000 f99e 	bl	8000950 <MX_GPIO_Init>
@@ -474,23 +474,23 @@ int main(void)
   while (1)
   {
     /* USER CODE END WHILE */
-    HAL_GPIO_WritePin(GPIOB, GPIO_PIN_3, GPIO_PIN_SET);
+    HAL_GPIO_WritePin(GPIOB, GPIO_PIN_5, GPIO_PIN_SET);
  8000628:	2201      	movs	r2, #1
- 800062a:	2108      	movs	r1, #8
+ 800062a:	2120      	movs	r1, #32
  800062c:	4808      	ldr	r0, [pc, #32]	@ (8000650 <main+0x50>)
  800062e:	f001 fc83 	bl	8001f38 <HAL_GPIO_WritePin>
     HAL_Delay(1000);
  8000632:	f44f 707a 	mov.w	r0, #1000	@ 0x3e8
  8000636:	f000 fd27 	bl	8001088 <HAL_Delay>
-    HAL_GPIO_WritePin(GPIOB, GPIO_PIN_3, GPIO_PIN_RESET);
+    HAL_GPIO_WritePin(GPIOB, GPIO_PIN_5, GPIO_PIN_RESET);
  800063a:	2200      	movs	r2, #0
- 800063c:	2108      	movs	r1, #8
+ 800063c:	2120      	movs	r1, #32
  800063e:	4804      	ldr	r0, [pc, #16]	@ (8000650 <main+0x50>)
  8000640:	f001 fc7a 	bl	8001f38 <HAL_GPIO_WritePin>
     HAL_Delay(1000);
  8000644:	f44f 707a 	mov.w	r0, #1000	@ 0x3e8
  8000648:	f000 fd1e 	bl	8001088 <HAL_Delay>
-    HAL_GPIO_WritePin(GPIOB, GPIO_PIN_3, GPIO_PIN_SET);
+    HAL_GPIO_WritePin(GPIOB, GPIO_PIN_5, GPIO_PIN_SET);
  800064c:	bf00      	nop
  800064e:	e7eb      	b.n	8000628 <main+0x28>
  8000650:	42020400 	.word	0x42020400

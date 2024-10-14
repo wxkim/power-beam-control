@@ -1,0 +1,9 @@
+[submodule "DroneControl/Core/Libraries/MAVLink"]
+	path = DroneControl/Core/Libraries/MAVLink
+	url = https://github.com/mavlink/c_library_v2.git
+[submodule "DroneControl/Core/DroneControl/Core/Libraries/MAVLink"]
+	path = DroneControl/Core/DroneControl/Core/Libraries/MAVLink
+	url = https://github.com/mavlink/c_library_v2.git
+[submodule "DroneControl/Core/Libraries/c_library_v2"]
+	path = DroneControl/Core/Libraries/c_library_v2
+	url = https://github.com/mavlink/c_library_v2.git

@@ -112,6 +112,7 @@ int main(void)
   /* USER CODE END 2 */
 
   /* Infinite loop */
+  fly();
   /* USER CODE BEGIN WHILE */
   while (1)
   {
@@ -120,6 +121,8 @@ int main(void)
     HAL_Delay(1000);
     HAL_GPIO_WritePin(GPIOB, GPIO_PIN_5, GPIO_PIN_RESET);
     HAL_Delay(1000);
+
+    break;
     //
 
     /* USER CODE BEGIN 3 */

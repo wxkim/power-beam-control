@@ -6,8 +6,9 @@
  */
 
 // #include "main.h"
-#include "../libraries/mavlink/common/mavlink.h"
+#include "../Libraries/c_library_v2/common/mavlink.h"
 #include "main.h"
+#include "firstflight.h"
 
 extern UART_HandleTypeDef huart1;
 
@@ -80,12 +81,10 @@ void land_drone()
     send_mavlink_message(&msg);
 }
 
-void fly(void)
+void fly()
 {
     // MCU Inits
     HAL_Init();
-    SystemClock_Config();
-    MX_USART1_UART_Init();
 
     // Actually fly
     setup_serial();
@@ -102,11 +101,5 @@ void fly(void)
     land_drone();
     HAL_Delay(2000);
 
-    while (1)
-    {
-        break;
-    }
-
     printf("SUCCESS\n");
-    return 0;
 }

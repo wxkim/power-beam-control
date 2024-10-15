@@ -6,7 +6,7 @@
  */
 
 // #include "main.h"
-#include "../Libraries/c_library_v2/common/mavlink.h"
+#include "../Libraries/MAVLink/common/mavlink.h"
 #include "main.h"
 #include "firstflight.h"
 

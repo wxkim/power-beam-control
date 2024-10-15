@@ -38,7 +38,7 @@ void takeoff(float altitude);
 /// @brief Land the drone using MAVLink
 void land_drone();
 
-void fly(void);
+void fly();
 
 
 
